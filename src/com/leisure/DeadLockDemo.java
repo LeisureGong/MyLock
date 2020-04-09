@@ -31,9 +31,9 @@ public class DeadLockDemo {
 			@Override
 			public void run() {
 				synchronized (B) {
-					synchronized (A){
+//					synchronized (A){
 						System.out.println("2");
-					}
+//					}
 				}
 			}
 		});
