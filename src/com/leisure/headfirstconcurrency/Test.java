@@ -12,6 +12,7 @@ public class Test {
 	private int queueSize = 10;
 	private ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(queueSize);
 
+
 	class Consumer extends Thread{
 		@Override
 		public void run(){

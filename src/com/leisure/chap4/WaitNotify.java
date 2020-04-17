@@ -1,4 +1,6 @@
-package com.leisure;
+package com.leisure.chap4;
+
+import com.leisure.chap4.SleepUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
