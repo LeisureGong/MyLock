@@ -57,16 +57,17 @@ public class WaitNotify {
 	static class Notify implements Runnable{
 		@Override
 		public void run(){
-			synchronized (lock){
-				System.out.println(Thread.currentThread() + " hold lock. notify @ " + new SimpleDateFormat("HH:mm:ss").format(new Date()));
-				lock.notifyAll();
-				flag = false;
-				SleepUtils.second(5);
-			}
+//			synchronized (lock){
+//				System.out.println(Thread.currentThread() + " hold lock. notify @ " + new SimpleDateFormat("HH:mm:ss").format(new Date()));
+//				lock.notifyAll();
+//				flag = false;
+//				SleepUtils.second(5);
+//			}
 
 			//再次加锁
 			synchronized (lock){
 				System.out.println(Thread.currentThread() + "hold lock again. @ " + new SimpleDateFormat("HH:mm:ss").format(new Date()));
+				lock.notify();
 				SleepUtils.second(5);
 			}
 		}

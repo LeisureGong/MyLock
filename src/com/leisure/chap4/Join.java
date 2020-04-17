@@ -1,4 +1,4 @@
-package com.leisure;
+package com.leisure.chap4;
 
 import java.util.concurrent.TimeUnit;
 
