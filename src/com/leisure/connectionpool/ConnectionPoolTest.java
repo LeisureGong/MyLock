@@ -1,5 +1,6 @@
 package com.leisure.connectionpool;
 
+
 import java.sql.Connection;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -19,7 +20,7 @@ public class ConnectionPoolTest {
 
 	public static void main(String... args) throws Exception{
 		//线程数量，可以修改线程数量进行观察
-		int threadCount = 10;
+		int threadCount = 150;
 		end = new CountDownLatch(threadCount);
 		int count = 20;
 		AtomicInteger got = new AtomicInteger();
