@@ -1,6 +1,5 @@
 package com.leisure.headfirstconcurrency;
 
-import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @author gonglei
